@@ -19,5 +19,5 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/student/store',[StudentsController::class,'store']);
+Route::post('/student/store',[StudentsController::class,'store']);
 Route::get('/student/search/{param}',[StudentsController::class,'searchStudent']);
